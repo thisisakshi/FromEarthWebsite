@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.acca9bff.css",
-    "main.js": "/static/js/main.3a24c175.js",
-    "static/js/787.0ebfa8dc.chunk.js": "/static/js/787.0ebfa8dc.chunk.js",
-    "index.html": "/index.html",
-    "main.acca9bff.css.map": "/static/css/main.acca9bff.css.map",
-    "main.3a24c175.js.map": "/static/js/main.3a24c175.js.map",
-    "787.0ebfa8dc.chunk.js.map": "/static/js/787.0ebfa8dc.chunk.js.map"
+    "main.css": "/FromEarthWebsite/static/css/main.acca9bff.css",
+    "main.js": "/FromEarthWebsite/static/js/main.f7fc5c19.js",
+    "static/js/787.0ebfa8dc.chunk.js": "/FromEarthWebsite/static/js/787.0ebfa8dc.chunk.js",
+    "index.html": "/FromEarthWebsite/index.html",
+    "main.acca9bff.css.map": "/FromEarthWebsite/static/css/main.acca9bff.css.map",
+    "main.f7fc5c19.js.map": "/FromEarthWebsite/static/js/main.f7fc5c19.js.map",
+    "787.0ebfa8dc.chunk.js.map": "/FromEarthWebsite/static/js/787.0ebfa8dc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.acca9bff.css",
-    "static/js/main.3a24c175.js"
+    "static/js/main.f7fc5c19.js"
   ]
 }
