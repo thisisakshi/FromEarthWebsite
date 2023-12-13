@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import { Banner } from "./components/Banner";
+import { Bestsellers } from "./components/Bestsellers";
+import { BulkOrder } from "./components/BulkOrder";
+import { Footer } from "./components/Footer";
+
+function HomePagePromo1() {
+  return (
+    <div className="flex items-center justify-center my-20">
+      <img className="w-full lg:w-1/2" src="images/from-earth-free-of.jpg" />
+    </div>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Banner />
+      <Bestsellers />
+      <HomePagePromo1 />
+      <BulkOrder />
+      <Footer />
     </div>
   );
 }
