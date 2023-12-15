@@ -4,6 +4,8 @@ const navbarLinks = [
   { displayName: "Home", href: "/" },
   { displayName: "Oil Soaps", href: "/oil-soaps" },
   { displayName: "Glycerin Soaps", href: "/glycerin-soaps" },
+  { displayName: "Bath", href: "/bath" },
+  { displayName: "Face & Body", href: "/face-and-body" },
   { displayName: "Candles", href: "/candles" },
   { displayName: "Gifting", href: "/gifting" },
 ];

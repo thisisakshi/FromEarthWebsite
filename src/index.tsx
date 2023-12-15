@@ -9,6 +9,8 @@ import { OilSoapsPage } from './pages/OilSoapsPage';
 import { GlycerinSoapsPage } from './pages/GlycerinSoapsPage';
 import { CandlesPage } from './pages/CandlesPage';
 import { GiftingPage } from './pages/GiftingPage';
+import { Bath } from './pages/Bath';
+import { FaceAndBody } from './pages/FaceAndBody';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -22,6 +24,8 @@ root.render(
         <Route path="/glycerin-soaps" Component={GlycerinSoapsPage} />
         <Route path="/candles" Component={CandlesPage} />
         <Route path="/gifting" Component={GiftingPage} />
+        <Route path="/bath" Component={Bath} />
+        <Route path="/face-and-body" Component={FaceAndBody} />
       </Routes>
     </Router>
 );

@@ -4,6 +4,7 @@ import { Banner } from "../components/Banner";
 import { FromEarthProduct, ProductTags, products } from "../data/products";
 import { Bestsellers } from "../components/Bestsellers";
 import { Footer } from "../components/Footer";
+import { YouMayAlsoLike } from "../components/YouMayAlsoLike";
 
 function ProductFlair() {
   return (
@@ -31,7 +32,7 @@ export function ProductPage() {
     <div>
       <Navbar />
       <Banner />
-      <div className="lg:mx-80 mx-10 my-10 grid lg:grid-cols-2 sm:grid-cols-1">
+      <div className="mx-10 lg:mx-80 my-10 grid grid-cols-1 lg:grid-cols-2 lg:space-x-5">
         {/* image */}
         <img className="w-96 mb-4" src={productImageURL} />
         {/* details */}
@@ -47,7 +48,7 @@ export function ProductPage() {
             <div className="flex space-x-3 mt-5">
               {product.variations.map((variation) => {
                 return (
-                  <p className="text-xl border-2 p-2 rounded-md border-gray-400 hover:text-gray-500">
+                  <p className="text-sm lg:text-lg border-2 p-2 rounded-md border-gray-400 hover:text-gray-500">
                     {variation}
                   </p>
                 );
@@ -60,7 +61,12 @@ export function ProductPage() {
 
           {/* Sulphate free, paraben free icons */}
           {(product.tags.includes(ProductTags.GLYCERIN_SOAP) ||
-            product.tags.includes(ProductTags.OIL_SOAP)) && <ProductFlair />}
+            product.tags.includes(ProductTags.OIL_SOAP) ||
+            product.tags.includes(ProductTags.BATH_SALTS) ||
+            product.tags.includes(ProductTags.FLUFFY_SOAP) ||
+            product.tags.includes(ProductTags.FACE_AND_BODY)) && (
+            <ProductFlair />
+          )}
 
           {/* Active ingrediants */}
           {product.activeIngrediants && (
@@ -72,11 +78,13 @@ export function ProductPage() {
         </div>
       </div>
 
+      {/* Divider */}
       <div className="flex items-center justify-center ">
         <div className="border-t border-gray-300 w-2/3" />
       </div>
 
-      <Bestsellers />
+      {/* <Bestsellers /> */}
+      <YouMayAlsoLike />
       <Footer />
     </div>
   );
