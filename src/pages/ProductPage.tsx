@@ -2,9 +2,9 @@ import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import { Banner } from "../components/Banner";
 import { FromEarthProduct, ProductTags, products } from "../data/products";
-import { Bestsellers } from "../components/Bestsellers";
 import { Footer } from "../components/Footer";
 import { YouMayAlsoLike } from "../components/YouMayAlsoLike";
+import { getAvailabilityWhatsAppLink } from "../data/helpers";
 
 function ProductFlair() {
   return (
@@ -41,7 +41,10 @@ export function ProductPage() {
           <p className="lg:text-3xl font-bold">{product.name}</p>
 
           {/* price */}
-          <p className="font-semibold lg:text-xl">Rs. {product.price}</p>
+          <p className="font-semibold lg:text-xl mb-5">Rs. {product.price}</p>
+
+          <a className="text-lg border-2 hover:border-3 p-2 rounded-lg border-green-700 text-green-700 hover:text-green-900 hover:border-green-900" href={getAvailabilityWhatsAppLink(product.name)}>Buy</a>
+
 
           {/* Variants? */}
           {product.variations && (
@@ -75,6 +78,7 @@ export function ProductPage() {
               {product.activeIngrediants}
             </p>
           )}
+
         </div>
       </div>
 

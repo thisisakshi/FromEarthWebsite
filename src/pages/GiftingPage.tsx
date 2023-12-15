@@ -4,6 +4,7 @@ import { ProductTags, products } from "../data/products";
 import Navbar from "../components/Navbar";
 import { Banner } from "../components/Banner";
 import { Footer } from "../components/Footer";
+import { getInquiryWhatsAppLink } from "../data/helpers";
 
 function CustomGifts() {
   return (
@@ -19,10 +20,10 @@ function CustomGifts() {
           <br />
           Order minimum of 10 gifts required. Minimum amount for each gift is
           Rs.800. Please contact{" "}
-          <a className="text-green-600" href="https://api.whatsapp.com/send?phone=918095944338&text=Hi,%20I'm%20Geetanjali.%20I%20started%20From%20Earth%20from%20my%20home%20in%202014.%20I'm%20happy%20to%20answer%20any%20questions%20you%20may%20have!">
+          <a className="text-green-600" href={getInquiryWhatsAppLink("custom gifting")}>
             +91 8095944338 on Whatsapp
           </a>{' '}
-          for inquiries
+          for inquiries.
         </p>
         <div className="flex gap-4 mt-10 justify-center items-center">
           <img

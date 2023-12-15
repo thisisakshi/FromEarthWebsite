@@ -45,7 +45,7 @@ export const products: FromEarthProduct[] = [
   },
   {
     id: 3,
-    name: "Almond & Olive Soap",
+    name: "Almond and Olive Soap",
     description:
       "Almond & Olive Soap offers you holistic skin care. Bathing with this herbal soap will give back to your skin all the lost nutrients as well as its natural sheen.",
     activeIngrediants:
@@ -211,7 +211,7 @@ export const products: FromEarthProduct[] = [
   },
   {
     id: 20,
-    name: "Soy Wax Candles",
+    name: "Soy Wax Candle",
     description: "Produces no soot and is long lasting.",
     price: 1299,
     image: "/images/candle_big_lavender.jpg",
@@ -329,7 +329,7 @@ export const products: FromEarthProduct[] = [
   },
   {
     id: 33,
-    name: "Kokum & Honey Soap",
+    name: "Kokum and Honey Soap",
     description: "Owing to the antioxidant and anti-inflammatory properties, Kokum Butter heals, soothes inflamed and damaged skin. Honey helps to calm down hormonal skin, and as a natural humectant, helps to attract moisture into the skin and keep it there.",
     price: 265,
     activeIngrediants: " Coconut oil, Kokum  Butter, Olive oil,  Palm oil, Rice bran oil, Castor oil, Honey, Ashwagandha & Ylang-Ylang essential oil.",
@@ -365,7 +365,7 @@ export const products: FromEarthProduct[] = [
   },
   {
     id: 37,
-    name: "Tomato & Goat Milk Moisturing Soap",
+    name: "Tomato and Goat Milk Moisturing Soap",
     description: "Organic tomato juice in the soap tightens and brightens your skin. Goat milk leaves your skin healthy and nourished and relieves irritation and inflammation.",
     price: 265,
     activeIngrediants: "Aqua, Coconut Oil, Olive Oil, Almond Oil, Goat Milk, Tomato Juice, Rice bran Oil, Lye, Basil essential Oil.",
